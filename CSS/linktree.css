@@ -1,0 +1,122 @@
+body {
+    background: linear-gradient(320deg, rgb(187, 176, 161) ,rgb(233, 159, 63));
+    height: 978px;
+}
+
+.screen {
+    border: solid antiquewhite;
+    border-radius: 25px;
+    height: 600px;
+    width: 500px;
+    margin: auto;
+    margin-top: 300px;
+}
+
+.h1 {
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: solid antiquewhite;
+    width: 150px;
+    border-radius: 10px;
+}
+
+.youtube {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px ;
+    border: solid 3px;
+    border-radius: 10px;
+    background: inherit;
+    color: aliceblue;
+}
+
+.youtube:hover {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 45px ;
+    border: solid 3px;
+    border-radius: 10px;
+    background: linear-gradient(320deg,red, blue, red);
+    color: rgb(255, 255, 255);
+}
+
+.tiktok {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px ;
+    border: solid 3px;
+    border-radius: 10px;
+    background: inherit;
+    color: aliceblue;
+}
+
+.tiktok:hover {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 45px ;
+    border: solid 3px;
+    border-radius: 10px;
+    background: linear-gradient(320deg,black, rgb(255, 51, 0), rgba(255, 255, 255, 0.374), rgb(0, 157, 255), black);
+    color: rgb(255, 255, 255);
+}
+
+.twitch {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px ;
+    border: solid 3px;
+    border-radius: 10px;
+    background: inherit;
+    color: aliceblue;
+}
+
+.twitch:hover {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 45px ;
+    border: solid 3px;
+    border-radius: 10px;
+    background: linear-gradient(320deg,rgb(144, 0, 255), rgb(0, 0, 0), rgba(255, 255, 255, 0.612));
+    color: rgb(255, 255, 255);
+}
+
+.twitter {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px ;
+    border: solid 3px;
+    border-radius: 10px;
+    background: inherit;
+    color: aliceblue;
+}
+
+.twitter:hover {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 45px ;
+    border: solid 3px;
+    border-radius: 10px;
+    background: linear-gradient(320deg, white, rgb(0, 174, 255), white);
+    color: rgb(255, 255, 255);
+}
+
+.back-a {
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: solid antiquewhite;
+    width: 150px;
+    border-radius: 10px;
+    color: aliceblue;
+    font-size: 30px;
+}
+
+.back-a:hover {
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: solid antiquewhite;
+    width: 150px;
+    border-radius: 10px;
+    color: aliceblue;
+    font-size: 35px;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CPS Tester</title>
+<link rel="stylesheet" href="CSS/cpstest.css">
+</head>
+<body>
+ <div class="screen">
+<div id="clickArea" onclick="clicked()"></div>
+<p>Clicks per second: <span id="cps">0</span></p>
+
+<button id="startButton" onclick="startTimer()">Start</button>
+<button id="stopButton" onclick="stopTimer()">Stop</button>
+<br>
+<a href="main.html">Back</a>
+</div>
+<script>
+  let clicks = 0;
+  let timer;
+  let totalTime = 10; // Total time in seconds after which to stop automatically
+  let startTime;
+
+  function clicked() {
+    clicks++;
+    updateCPS();
+  }
+
+  function updateCPS() {
+    const now = Date.now();
+    const timePassed = (now - startTime) / 1000;
+    const cps = clicks / timePassed;
+    document.getElementById("cps").innerHTML = cps.toFixed(2);
+  }
+
+  function startTimer() {
+    document.getElementById("startButton").style.display = "none";
+    document.getElementById("stopButton").style.display = "inline";
+    startTime = Date.now();
+    timer = setTimeout(() => {
+      stopTimer();
+      alert("Time's up!");
+    }, totalTime * 1000);
+  }
+
+  function stopTimer() {
+    clearTimeout(timer);
+    document.getElementById("startButton").style.display = "inline";
+    document.getElementById("stopButton").style.display = "none";
+    clicks = 0;
+    startTime = null;
+    document.getElementById("cps").innerHTML = '0';
+  }
+
+  // Clear the timeout on page load to reset the counter
+  window.onload = function() {
+    clearTimeout(timer);
+  }
+</script>
+
+</body>
+</html>
